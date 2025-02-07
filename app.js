@@ -25,15 +25,15 @@ app.use(cors())
 
 // sync database table
 
-sequelize.sync({ force:false, alter: true, logging: false }).then(() => {
-  console.log("Database synced");
-}).catch((err) => {
-  console.error(err);
-});
+// sequelize.sync({ force:false, alter: true, logging: false }).then(() => {
+//   console.log("Database synced");
+// }).catch((err) => {
+//   console.error(err);
+// });
 //  sequelize.sync({ alter: true });
-VehicleType.sync({ force: false ,alter: true});
-Vehicle.sync({ force: false ,alter:true });
-Booking.sync({ alter: true });
+VehicleType.sync({ force: true});
+Vehicle.sync({ force: true});
+Booking.sync({ force:true});
 
 // import("./models/begin.js")
 
