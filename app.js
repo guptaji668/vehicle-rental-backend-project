@@ -35,7 +35,7 @@ app.use(cors())
 // Vehicle.sync({ force: true});
 // Booking.sync({ force:true});
 
-import("./models/begin.js")
+// import("./models/begin.js")
 
 const PORT=process.env.PORT || 5000
 
