@@ -31,11 +31,11 @@ app.use(cors())
 //   console.error(err);
 // });
 //  sequelize.sync({ alter: true });
-VehicleType.sync({ force: true});
-Vehicle.sync({ force: true});
-Booking.sync({ force:true});
+// VehicleType.sync({ force: true});
+// Vehicle.sync({ force: true});
+// Booking.sync({ force:true});
 
-// import("./models/begin.js")
+import("./models/begin.js")
 
 const PORT=process.env.PORT || 5000
 
